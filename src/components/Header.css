@@ -1,0 +1,58 @@
+/* Basic Reset */
+body, h1, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    color: #0d0d0d; /* Dark navy or black color */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0d0d0d; /* Navy */
+}
+
+.divider {
+    height: 2rem;
+    width: 1px;
+    background-color: #e4c553; /* Gold */
+    margin: 0 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    color: #0d0d0d;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #0d0d0d;
+    text-transform: lowercase;
+    margin: 0 5px;
+}
+
+.contact-link {
+    background-color: #e9f7f6; /* Light aqua color */
+    padding: 5px 15px;
+    border-radius: 15px;
+}
