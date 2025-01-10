@@ -13,14 +13,16 @@ function Header() {
                 </div>
                 <nav className="nav-container">
                     <Link to="/" className="nav-link">home</Link>
-                    <span className="divider"></span>
+                    <span className="link-divider"></span>
                     <Link to="/about" className="nav-link">about</Link>
-                    <span className="divider"></span>
+                    <span className="link-divider"></span>
                     <Link to="/projects" className="nav-link">projects</Link>
-                    <span className="divider"></span>
+                    <span className="link-divider"></span>
                     <Link to="/contact" className="nav-link contact-link">contact me</Link>
                 </nav>
             </header>
+
+            <hr />
         </>
     );
 }
