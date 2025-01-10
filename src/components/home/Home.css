@@ -1,0 +1,16 @@
+.container {
+    width: 40%; /* Set the width of the container */
+    height: 50vh; /* Set the height to full viewport height */
+    display: flex; /* Enable Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    /* justify-content: center; Center items vertically */
+    align-items: flex-end; /* Align items to the right */
+    text-align: right; /* Align text inside the container to the right */
+    padding-right: 200px; /* Add some spacing from the edge */
+    padding-top: 100px;
+}
+
+.highlight {
+    color: #d4a200; /* Add highlight color */
+    font-weight: bold; /* Optional: Make it bold */
+}
