@@ -1,5 +1,6 @@
 import "./Home.css";
 
+
 function Home() {
     return (
         <div className="container">
@@ -10,6 +11,9 @@ function Home() {
                     <span className="highlight">i'm ryan,</span>
                 </h1>
                 <h2>full-stack software engineer</h2>
+        
+                <button className="lets-connect">let's connect!</button>
+
             </div>
             
             <img
@@ -18,9 +22,7 @@ function Home() {
                 className="portrait"
             />
 
-
-            <button>let's connect</button>
-        
+        <hr className="hr-home"/>
 
         </div>
     );

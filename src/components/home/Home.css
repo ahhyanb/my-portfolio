@@ -1,11 +1,20 @@
 .container {
     display: flex; /* Enable Flexbox for horizontal alignment */
-     /* Center the content horizontally */
-  /* Align the items vertically */
-    height: auto; /* Full viewport height */
+    justify-content: center; /* Center the text and image horizontally */
+    align-items: center; /* Align items vertically */
     gap: 60px; /* Add spacing between text and image */
-    padding: 100px 50px; /* Add padding to the sides */
-    justify-content: center;
+    padding: 100px 50px; /* Add padding around the content */
+    flex-wrap: wrap; /* Allow wrapping for the button to appear below */
+    position: relative; /* Enable positioning for the button */
+    padding-bottom: 10px;
+}
+
+.text-container {
+    text-align: right; /* Align the text to the right */
+    padding-right: 30px; /* Add spacing between text and the line */
+    border-right: 2px solid #d4a200; /* Add a vertical line to the right of the text */
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .portrait {
@@ -24,9 +33,30 @@
     font-weight: bold; /* Optional: Make it bold */
 }
 
-.text-container {
-    text-align: right; /* Align the text to the right */
-    padding-right: 30px; /* Add spacing between text and the line */
-    border-right: 2px solid #d4a200; /* Add a vertical line to the right of the text */
-    padding-top: 30px;
+.lets-connect {
+    position: left; /* Position the button */
+    bottom: -50px; /* Place it below the container */
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 16px; /* Adjust font size */
+    background-color: #0d0d0d; /* Button background color */
+    color: #e9f7f6; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    left: 30px; /* Align with the text container's padding */
+  
+}
+ 
+.lets-connect:hover {
+    background-color: #b38600; /* Darker background on hover */
+}
+
+
+.hr-home {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #e9f7f6, transparent);
+    margin-top: 60px;
 }
