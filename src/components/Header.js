@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"
 import "./Header.css"; 
 
-function Header() {
+function Header({ onNavigate }) {
     return (
         <>
             <header className="header">
@@ -12,13 +11,10 @@ function Header() {
                     <h1 className="name">ryan bartolome</h1>
                 </div>
                 <nav className="nav-container">
-                    <Link to="/" className="nav-link">home</Link>
-                    {/* <span className="link-divider"></span> */}
-                    <Link to="/bio" className="nav-link">bio</Link>
-                    {/* <span className="link-divider"></span> */}
-                    <Link to="/projects" className="nav-link">projects</Link>
-                    {/* <span className="link-divider"></span> */}
-                    <Link to="/contact" className="nav-link contact-link">contact me</Link>
+                    <button onClick={() => onNavigate("home")} className="nav-link">home</button>
+                    <button onClick={() => onNavigate("bio")} className="nav-link">bio</button>
+                    <button onClick={() => onNavigate("projects")} className="nav-link">projects</button>
+                    <button onClick={() => onNavigate("contact")} className="nav-link contact-link">contact me</button>
                 </nav>
             </header>
 

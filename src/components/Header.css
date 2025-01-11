@@ -1,5 +1,5 @@
 /* Basic Reset */
-body, h1, a {
+body, h1, a, button {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -33,7 +33,6 @@ body, h1, a {
     margin: 0 10px;
 }
 
-
 .name {
     font-size: 1.5rem;
     color: #0d0d0d;
@@ -50,6 +49,9 @@ body, h1, a {
     color: #0d0d0d;
     text-transform: lowercase;
     margin: 0 5px;
+    background: none; /* Remove default button styles */
+    border: none;
+    cursor: pointer;
 }
 
 .contact-link {

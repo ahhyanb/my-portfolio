@@ -1,5 +1,4 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/home/Home';
 import Bio from './components/bio/Bio';
@@ -7,22 +6,30 @@ import Projects from './components/projects/Project';
 import Contact from './components/contact/Contact';
 
 function App() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-   <>
+    <>
+      <Header onNavigate={scrollToSection} />
 
-    <Header />
-
-    <Routes>
-
-      {/* <Route path="/" element={<Header />} /> */}
-      <Route path="/" element={<Home />} />
-      <Route path="/bio" element={<Bio />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-
-    </Routes>
-
-  </>
+      <div id="home">
+        <Home />
+      </div>
+      <div id="bio">
+        <Bio />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+    </>
   );
 }
 
