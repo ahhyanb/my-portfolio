@@ -1,16 +1,32 @@
 .container {
-    width: 40%; /* Set the width of the container */
-    height: 50vh; /* Set the height to full viewport height */
-    display: flex; /* Enable Flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    /* justify-content: center; Center items vertically */
-    align-items: flex-end; /* Align items to the right */
-    text-align: right; /* Align text inside the container to the right */
-    padding-right: 200px; /* Add some spacing from the edge */
-    padding-top: 100px;
+    display: flex; /* Enable Flexbox for horizontal alignment */
+     /* Center the content horizontally */
+  /* Align the items vertically */
+    height: auto; /* Full viewport height */
+    gap: 60px; /* Add spacing between text and image */
+    padding: 100px 50px; /* Add padding to the sides */
+    justify-content: center;
+}
+
+.portrait {
+    width: 200px; /* Set the image width */
+    height: 200px; /* Make the height equal to width for a perfect circle */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fills the circle without distortion */
+    object-position: center bottom; /* Move the image focus lower */
+    transform: scale(1.2); /* Zoom in on the image (increase the value for more zoom) */
+    border: 10px solid #e9f7f6; /* Optional: Add a border around the image */
+    background-color: #e9f7f6;
 }
 
 .highlight {
-    color: #d4a200; /* Add highlight color */
+    color: #d4a200; /* Highlighted text color */
     font-weight: bold; /* Optional: Make it bold */
+}
+
+.text-container {
+    text-align: right; /* Align the text to the right */
+    padding-right: 30px; /* Add spacing between text and the line */
+    border-right: 2px solid #d4a200; /* Add a vertical line to the right of the text */
+    padding-top: 30px;
 }
