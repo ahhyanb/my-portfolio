@@ -17,6 +17,11 @@ function Home() {
                 alt="Ryan's Portrait"
                 className="portrait"
             />
+
+
+            <button>let's connect</button>
+        
+
         </div>
     );
 }

@@ -28,16 +28,9 @@ body, h1, a {
 
 .divider {
     height: 2rem;
-    width: 1px;
+    width: 2px;
     background-color: #e4c553; /* Gold */
     margin: 0 10px;
-}
-
-.link-divider {
-    height: 2rem;
-    width: 1px;
-    background-color: #e4c553; /* Gold */
-    margin: 0 1px;
 }
 
 
@@ -63,4 +56,37 @@ body, h1, a {
     background-color: #e9f7f6;
     padding: 5px 15px;
     border-radius: 15px;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #e9f7f6, transparent);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Align links to the left */
+        gap: 5px; /* Reduce gap for stacked links */
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 5px 0; /* Add vertical spacing for links */
+    }
+
+    .contact-link {
+        align-self: flex-start; /* Align the "contact me" button to the left */
+    }
 }
