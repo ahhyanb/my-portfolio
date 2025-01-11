@@ -32,13 +32,11 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Project image */
@@ -55,7 +53,7 @@
     flex-wrap: wrap;
     gap: 8px;
     padding: 10px;
-    justify-content: center;
+    justify-content: right;
 }
 
 .tech {
@@ -69,21 +67,25 @@
 
 /* Project content */
 .project-content {
-    text-align: center;
+    text-align: left; /* Align text to the left */
     padding: 15px;
 }
 
+/* Project title */
 .project-title {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
+    text-align: left; /* Ensure title is aligned to the left */
 }
 
+/* Project description */
 .project-description {
     font-size: 1rem;
     color: #555;
     margin-bottom: 15px;
     line-height: 1.5;
+    text-align: left; /* Ensure description is aligned to the left */
 }
 
 .project-button {
@@ -91,9 +93,10 @@
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Reduced padding for a smaller button */
     border-radius: 5px;
     font-weight: bold;
+    font-size: 0.875rem; /* Reduced font size for smaller text */
     transition: background-color 0.3s ease;
 }
 
