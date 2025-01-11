@@ -1,26 +1,37 @@
-/* Container */
+/* Bio Container */
 .bio-container {
-    background-color: #0d0d2d; /* Dark navy */
-    color: #f4f4f4; /* Light text */
-    padding: 40px;
-    font-family: 'Georgia', serif;
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 30px; /* Add spacing between braces and content */
+    padding: 50px 50px; /* Add padding around the content */
+    background-color: #0d0d2d; /* Dark navy background */
+    color: #f4f4f4; /* Light text for readability */
 }
+
+/* Braces */
+.brace {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #d4a200; /* Gold for braces */
+    display: inline-block; /* Ensures transform works correctly */
+    transform: scaleY(3); /* Stretches the text vertically */
+}
+
+
 
 /* Bio Section */
 .bio-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+    background-color: #e9f7f6; /* Light greenish-blue for consistent card background */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners for content area */
+    max-width: 600px; /* Limit content width for better readability */
+    flex: 1; /* Allow the bio section to take available space */
+    text-align: left;
 }
 
 .quote {
-    flex: 3;
-    background-color: #dff6f4; /* Light greenish-blue */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
+    text-align: left; /* Align text to the left */
 }
 
 .bio-text {
@@ -30,60 +41,44 @@
 
 .bio-subtext {
     font-size: 1rem;
-    color: #333;
+    color: #0d0d0d; /* Darker text for better contrast */
 }
 
-.quote-mark {
-    font-size: 2rem;
-    color: #333;
-}
 
 .highlight {
     font-weight: bold;
-    color: #e4c553; /* Gold */
-}
-
-/* Decorative Elements */
-.braces {
-    flex: 1;
-    font-size: 4rem;
-    font-weight: bold;
-    color: #f4c553; /* Gold */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.braces .semicolon {
-    font-size: 2rem;
-    margin-top: -20px;
+    color: #d4a200; /* Gold for highlighted text */
 }
 
 /* Experience Section */
 .experience-section {
-    margin-top: 30px;
+    margin-top: 50px; /* Add spacing from the bio section */
+    width: 100%;
+    max-width: 800px; /* Limit the width of the experience section */
+    text-align: left;
 }
 
+/* Experience Title */
 .experience-title {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    text-align: left;
-    color: #f4f4f4;
+    color: #e9f7f6; /* Gold for the title */
+    text-align: center;
 }
 
+/* Individual Experience Card */
 .experience-card {
-    background-color: #dff6f4; /* Light greenish-blue */
+    background-color: #e9f7f6; /* Light greenish-blue for consistent card background */
+    color: #0d0d0d; /* Dark text for readability */
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 .experience-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #0d0d2d;
 }
 
 .company {
@@ -95,12 +90,11 @@
 .date {
     font-size: 0.9rem;
     font-style: italic;
-    color: #0d0d2d;
     margin-bottom: 10px;
 }
 
 .experience-card ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -108,4 +102,20 @@
     font-size: 0.9rem;
     margin-bottom: 10px;
     color: #333;
+}
+
+.button-container {
+    margin-top: 20px; /* Add spacing below the bio section */
+    text-align: center;
+}
+
+.resume-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #d4a200; /* Same color as the bio section */
+    color:  #e9f7f6; /* Dark text color for contrast */
+    border: none; /* Remove borders */
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }

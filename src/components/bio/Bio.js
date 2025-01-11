@@ -4,24 +4,30 @@ import "./Bio.css";
 function Bio() {
     return (
         <div className="bio-container">
+            {/* Left Brace */}
+            <div className="brace">{'{'}</div>
+
             {/* Bio Section */}
             <div className="bio-section">
                 <div className="quote">
-                    <p className="bio-text">
-                        <span className="quote-mark">“</span> Hi, I’m Ryan—a full-stack software engineer specializing in 
+                    <p className="bio-subtext">
+                         Hi, I’m Ryan—a full-stack software engineer specializing in 
                         <span className="highlight"> JavaScript, React, and Node.js</span>.
                     </p>
                     <p className="bio-subtext">
                         I love building web apps, solving problems, and constantly learning. Outside of coding, 
-                        I enjoy photography, design, and boba. <span className="quote-mark">”</span>
+                        I enjoy photography, design, and boba. 
                     </p>
                 </div>
-                <div className="braces">
-                    <span className="brace">{'{'}</span>
-                    <span className="semicolon">;</span>
-                </div>
             </div>
+            {/* Right Brace */}
+            <div className="brace">{'}'}</div>
 
+             {/* Download Resume Button */}
+             <div className="button-container">
+                <button className="resume-button">Download Resume</button>
+            </div>
+            
             {/* Experience Section */}
             <div className="experience-section">
                 <h2 className="experience-title">Experience</h2>
