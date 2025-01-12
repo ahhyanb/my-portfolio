@@ -7,7 +7,7 @@
     color: #0d0d0d;
     overflow: hidden; /* Prevent content from spilling out */
     width: 100%; /* Full width */
-    max-width: 900px; /* Limit the max width */
+    max-width: 600px; /* Limit the max width */
     margin: 20px auto; /* Center the footer horizontally */
     padding: 20px 30px; /* Add padding for spacing */
    

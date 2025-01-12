@@ -3,7 +3,9 @@
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Align items vertically */
     gap: 60px; /* Space between text and image */
-    padding: 50px 20px; /* Adjust padding for better responsiveness */
+    padding-top: 300px;
+    padding-bottom: 300px;
+     /* Adjust padding for better responsiveness */
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     position: relative; /* Enable positioning for the button */
 }
