@@ -12,7 +12,14 @@ function Home() {
                 </h1>
                 <h2>full-stack software engineer</h2>
         
-                <button className="lets-connect">let's connect!</button>
+                <a
+                    href="https://www.linkedin.com/in/ryanmartbartolome/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="lets-connect"
+                >
+                    let's connect!
+                </a>
 
             </div>
             

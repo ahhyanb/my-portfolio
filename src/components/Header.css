@@ -68,6 +68,21 @@ hr {
     background: linear-gradient(to right, transparent, #e9f7f6, transparent);
 }
 
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #e4c553; /* Gold color on hover */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for contact button */
+.contact-link:hover {
+    background-color: #e4c553; /* Change to gold on hover */
+    color: #0d0d0d; /* Contrast dark text */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
     .header {

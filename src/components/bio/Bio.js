@@ -24,8 +24,14 @@ function Bio() {
             <div className="brace">{'}'}</div>
 
              {/* Download Resume Button */}
-             <div className="button-container">
-                <button className="resume-button">Download Resume</button>
+            <div className="button-container">
+                <a
+                    href="/ryan-bartolome-resume.pdf" // Replace with the actual path to your resume
+                    download="ryan-bartolome-resume.pdf" // Optional: Specify the downloaded file name
+                    className="resume-button"
+                >
+                    Download Resume
+                </a>
             </div>
             
             {/* Experience Section */}

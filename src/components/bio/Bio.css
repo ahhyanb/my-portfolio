@@ -13,7 +13,7 @@
 .brace {
     font-size: 10rem;
     font-weight: bold;
-    color: #d4a200; /* Gold for braces */
+    color: #e4c553; /* Gold for braces */
     display: inline-block; /* Ensures transform works correctly */
     transform: scaleY(3); /* Stretches the text vertically */
 }
@@ -47,7 +47,7 @@
 
 .highlight {
     font-weight: bold;
-    color: #d4a200; /* Gold for highlighted text */
+    color: #e4c553; /* Gold for highlighted text */
 }
 
 /* Experience Section */
@@ -115,10 +115,15 @@
 .resume-button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #d4a200; /* Same color as the bio section */
-    color:  #e9f7f6; /* Dark text color for contrast */
+    background-color: #e4c553; /* Same color as the bio section */
+    color:  #0d0d0d; /* Dark text color for contrast */
     border: none; /* Remove borders */
     border-radius: 50px; /* Rounded button */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: #e9f7f6; /* Slightly brighter hover color */
+    transform: translateY(-2px); /* Lift the button on hover */
 }
