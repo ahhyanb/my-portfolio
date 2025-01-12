@@ -112,18 +112,47 @@
     text-align: center;
 }
 
+/* Resume Button */
 .resume-button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #e4c553; /* Same color as the bio section */
-    color:  #0d0d0d; /* Dark text color for contrast */
+    background-color: #e4c553; /* Gold color for the button */
+    color: #0d0d0d; /* Dark text for contrast */
     border: none; /* Remove borders */
     border-radius: 50px; /* Rounded button */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto; /* Default width for larger screens */
+    max-width: 200px; /* Limit width on larger screens */
+    text-align: center; /* Center the text inside the button */
+    display: inline-block; /* Ensure proper alignment */
 }
 
+/* Hover Effect */
 .resume-button:hover {
-    background-color: #e9f7f6; /* Slightly brighter hover color */
-    transform: translateY(-2px); /* Lift the button on hover */
+    background-color: #e9f7f6; /* Lighter hover background */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Centering Button Inside Container */
+.button-container {
+    margin-top: 20px; /* Spacing from the content above */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center vertically if needed */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .resume-button {
+        padding: 8px 12px; /* Smaller padding for compact size */
+        font-size: 0.875rem; /* Slightly smaller font size */
+        max-width: 100%; /* Let button stretch within container */
+        width: auto; /* Adjust automatically to fit content */
+    }
+
+    .button-container {
+        margin: 15px auto; /* Center the container on small screens */
+        text-align: center; /* Ensure text alignment */
+    }
 }
