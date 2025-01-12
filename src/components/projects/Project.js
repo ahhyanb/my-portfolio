@@ -58,7 +58,9 @@ function Projects() {
                                 <p className="project-description">{project.description}</p>
                                 <a 
                                     href={project.link}
-                                    className="project-button" 
+                                    className="project-button"
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
                                 >
                                     View Project
                                 </a>
