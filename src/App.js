@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import Bio from './components/bio/Bio';
 import Projects from './components/projects/Project';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   const scrollToSection = (id) => {
@@ -28,6 +29,9 @@ function App() {
       </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

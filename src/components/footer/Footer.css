@@ -1,0 +1,64 @@
+.footer-container {
+    display: flex; /* Use Flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out content */
+    color: #0d0d0d; /* Light text for contrast */
+    border-radius: 30px; /* Rounded corners to match project card */
+    overflow: hidden; /* Prevent content from spilling out */
+    width: 100%; /* Full width */
+    max-width: 900px; /* Limit the max width */
+    margin: 20px auto; /* Center the footer horizontally */
+    padding: 50px 50px; /* Add padding for spacing */
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    gap: 15px; /* Add spacing between items */
+    width: 60%; /* Take up 60% of the footer */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin: 0; /* Remove default margin */
+    color: #0d0d0d;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add space between links */
+}
+
+.footer-links a {
+    color: #0d0d0d; /* Highlight color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #efecef; /* Brighter hover color */
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 15px; /* Space between icons */
+    width: 40%; /* Take up 40% of the footer */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.social-media a img {
+    width: 30px; /* Icon size */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
