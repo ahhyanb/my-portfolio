@@ -4,7 +4,7 @@ function Projects() {
     const projectList = [
         {   
             id: 1,
-            image: "",
+            image: "tv-show-app.png",
             title: "TV Show Finder",
             description: "A full-stack web application that allows users to search for TV shows using a third-party API, view detailed show information, and save their favorite shows for future reference. The app features a responsive and user-friendly interface built with React, a robust backend powered by Node.js, and a PostgreSQL database for storing user data and favorite shows.",
             technologies: ["React", "Node.js", "PostgreSQL"],
@@ -12,7 +12,7 @@ function Projects() {
         },
         {
             id: 2,
-            image: "",
+            image: "flip-card.png",
             title: "Flashcard App",
             description: "An interactive flashcard application designed to help users study and test their knowledge effectively. Users can create custom decks, add flashcards with questions and answers, and flip through them to practice. Built with React for dynamic UI interactions, Express for the backend, and styled with Bootstrap for a clean and modern look.",
             technologies: ["React", "Express", "Bootstrap"],
@@ -20,7 +20,7 @@ function Projects() {
         },
         {
             id: 3,
-            image: "",
+            image: "my-portfolio.png",
             title: "Portfolio Website",
             description: "A professional portfolio website to showcase my skills, projects, and experience in web development. This responsive site includes a visually appealing homepage, detailed project sections, and contact information. Built using React for dynamic content rendering, CSS for custom styling, and HTML for structuring content.",
             technologies: ["React", "CSS", "HTML"],
