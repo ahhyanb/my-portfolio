@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Ryan Bartolome's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! This repository contains the source code for my personal portfolio website, showcasing my projects, skills, and contact information.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About](#about)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contact](#contact)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio is designed to highlight my skills as a full-stack software engineer. It features sections for:
+- A brief bio
+- My projects
+- A contact form for visitors to reach me
+- Links to my GitHub and LinkedIn profiles
 
-### `npm test`
+The website is fully responsive, ensuring an optimal viewing experience on all devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Dynamic Bio Section**: An engaging introduction about me and my technical expertise.
+- **Project Showcase**: Detailed cards for each project, including descriptions, technologies used, and links to GitHub repositories.
+- **Contact Form**: Allows users to send me messages directly from the site.
+- **Responsive Design**: Adapts seamlessly to different screen sizes.
+- **Social Media Integration**: Quick links to my GitHub and LinkedIn profiles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+This project is built with:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React**: For building the user interface.
+- **CSS**: For custom styling and responsiveness.
+- **EmailJS**: To enable form submissions.
+- **GitHub Pages**: For deployment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setup and Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project locally, follow these steps:
 
-## Learn More
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ahhyanb/my-portfolio.git
+   cd my-portfolio
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Run the development server**:
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+4. **Open in your browser**:
+   Navigate to `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once the portfolio is running locally or deployed, you can:
 
-### Making a Progressive Web App
+- Navigate through different sections (Bio, Projects, Contact) via the header.
+- View detailed information about my projects.
+- Submit the contact form to reach out to me.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```plaintext
+src
+├── components
+│   ├── bio
+│   │   └── Bio.js
+│   ├── projects
+│   │   └── Projects.js
+│   ├── contact
+│   │   └── Contact.js
+│   └── footer
+│       └── Footer.js
+├── App.js
+├── index.js
+└── styles
+    ├── Bio.css
+    ├── Projects.css
+    ├── Contact.css
+    └── Footer.css
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
+If you have any questions or want to connect, feel free to reach out:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email**: rahhyahh@icloud.com
+- **GitHub**: [ahhyanb](https://github.com/ahhyanb)
+- **LinkedIn**: [Ryan Bartolome](https://www.linkedin.com/in/ryanmartbartolome/)
+
+Thank you for visiting my portfolio!
+
