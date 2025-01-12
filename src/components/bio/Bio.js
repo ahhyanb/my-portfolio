@@ -30,7 +30,7 @@ function Bio() {
             
             {/* Experience Section */}
             <div className="experience-section">
-                <h2 className="experience-title">Experience</h2>
+                <h2 className="experience-title">experience</h2>
 
                 <div className="experience-card">
                     <h3>Software Engineer Student</h3>

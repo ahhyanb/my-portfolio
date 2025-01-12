@@ -1,65 +1,86 @@
 .contact-container {
-    padding: 20px;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align all content */
+    text-align: center; /* Center-align text for the rest of the content */
+    background-color: #0d0d0d; /* Dark background */
+    color: #e9f7f6; /* Light text for contrast */
+    padding: 50px 20px; /* Add padding around the container */
+    width: 100%; /* Full width */
+   
+    margin: 20px auto; /* Center the container horizontally */
 }
 
 .contact-container h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #0077b5; /* LinkedIn blue */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e9f7f6; /* Ensure title matches container color */
+    padding: 50px 50px; /* Add spacing below the title */
+    text-align: left; /* Align the title to the left */
+    width: 900px;
+
 }
 
 .contact-container p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e9f7f6; /* Ensure contrast against the dark background */
+    line-height: 1.5; /* Improve readability */
+    max-width: 600px; /* Limit width for readability */
+    padding-bottom: 50px;
 }
 
 .contact-form {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* Stack form elements */
+    gap: 15px; /* Add space between form elements */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit form width */
+    padding-bottom: 50px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%; /* Ensure the group spans full width */
 }
 
 label {
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #333;
+    color: #e9f7f6; /* Match label color with the container */
 }
 
 input, textarea {
-    width: 100%;
+    width: 100%; /* Full width */
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #e4c553; /* Match border with other elements */
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #f0f0f0; /* Light background for input fields */
+    color: #0d0d0d; /* Dark text for input fields */
 }
 
 input:focus, textarea:focus {
-    border-color: #0077b5;
-    outline: none;
+    border-color: #e4c553; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 4px #e4c553; /* Add a subtle glow effect */
 }
 
 .submit-button {
     padding: 12px 20px;
     font-size: 1rem;
-    color: #fff;
-    background-color: #0077b5;
+    color: #0d0d0d; /* Dark text for better readability */
+    background-color: #e4c553; /* Use highlight color for button */
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* Rounded button for consistency */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .submit-button:hover {
-    background-color: #005582;
+    background-color: #e9f7f6; /* Slightly brighter hover color */
+    transform: translateY(-2px); /* Lift the button on hover */
 }

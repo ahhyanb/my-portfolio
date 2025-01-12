@@ -5,8 +5,8 @@
     align-items: center; /* Align items vertically */
     gap: 30px; /* Add spacing between braces and content */
     padding: 50px 50px; /* Add padding around the content */
-    background-color: #0d0d2d; /* Dark navy background */
-    color: #f4f4f4; /* Light text for readability */
+    background-color: #0d0d0d; /* Dark navy background */
+    color: #e9f7f6; /* Light text for readability */
 }
 
 /* Braces */
@@ -60,10 +60,13 @@
 
 /* Experience Title */
 .experience-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #e9f7f6; /* Gold for the title */
-    text-align: center;
+    font-size: 2.5rem; /* Adjust font size */
+    color: #e9f7f6; /* Title color */
+    text-align: left; /* Center the title */
+    margin: 0; /* Remove default margins */
+    width: 100%; /* Ensure title takes the full width */
+    max-width: 900px; /* Align with project card's max width */
+    padding: 40px 0; /* Add vertical padding for spacing */
 }
 
 /* Individual Experience Card */
@@ -101,7 +104,7 @@
 .experience-card ul li {
     font-size: 0.9rem;
     margin-bottom: 10px;
-    color: #333;
+    color: #0d0d0d;
 }
 
 .button-container {

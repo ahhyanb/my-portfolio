@@ -1,41 +1,42 @@
 .container {
     display: flex; /* Enable Flexbox for horizontal alignment */
-    justify-content: center; /* Center the text and image horizontally */
+    justify-content: center; /* Center content horizontally */
     align-items: center; /* Align items vertically */
-    gap: 60px; /* Add spacing between text and image */
-    padding: 100px 50px; /* Add padding around the content */
-    flex-wrap: wrap; /* Allow wrapping for the button to appear below */
+    gap: 60px; /* Space between text and image */
+    padding: 50px 20px; /* Adjust padding for better responsiveness */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     position: relative; /* Enable positioning for the button */
-    padding-bottom: 10px;
 }
 
 .text-container {
-    text-align: right; /* Align the text to the right */
-    padding-right: 30px; /* Add spacing between text and the line */
-    border-right: 2px solid #d4a200; /* Add a vertical line to the right of the text */
-    padding-top: 30px;
-    padding-bottom: 10px;
+    text-align: right; /* Align text to the right */
+    padding: 20px; /* Adjust padding for better responsiveness */
+    border-right: 2px solid #d4a200; /* Add a vertical line */
+    margin-bottom: 20px; /* Space below text-container on wrap */
+    max-width: 500px; /* Limit the width for readability */
+    flex: 1 1 300px; /* Allow text to shrink and grow flexibly */
 }
 
 .portrait {
-    width: 200px; /* Set the image width */
-    height: 200px; /* Make the height equal to width for a perfect circle */
-    border-radius: 50%; /* Make the image circular */
+    width: 150px; /* Adjust size for smaller screens */
+    height: 150px; /* Keep the circular shape */
+    border-radius: 50%; /* Circular image */
     object-fit: cover; /* Ensure the image fills the circle without distortion */
-    object-position: center bottom; /* Move the image focus lower */
-    transform: scale(1.2); /* Zoom in on the image (increase the value for more zoom) */
-    border: 10px solid #e9f7f6; /* Optional: Add a border around the image */
+    object-position: center bottom; /* Focus image lower */
+    transform: scale(1.1); /* Subtle zoom for better proportions */
+    border: 5px solid #e9f7f6; /* Optional: Add a border */
     background-color: #e9f7f6;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .highlight {
     color: #d4a200; /* Highlighted text color */
-    font-weight: bold; /* Optional: Make it bold */
+    font-weight: bold; /* Bold text */
 }
 
 .lets-connect {
-    position: left; /* Position the button */
-    bottom: -50px; /* Place it below the container */
+    position: relative; /* Use relative positioning for better flexibility */
+    margin-top: 20px; /* Space above button */
     padding: 10px 20px; /* Add padding inside the button */
     font-size: 16px; /* Adjust font size */
     background-color: #e9f7f6; /* Button background color */
@@ -43,19 +44,47 @@
     border: none; /* Remove border */
     border-radius: 50px; /* Rounded corners */
     cursor: pointer; /* Change cursor to pointer */
-    left: 30px; /* Align with the text container's padding */
+    text-align: center; /* Center text */
 }
- 
+
 .lets-connect:hover {
     background-color: #b38600; /* Darker background on hover */
 }
 
 .hr-home {
-    width: 50%;
-    margin: 0 auto;
+    width: 90%; /* Adjust width for responsiveness */
+    margin: 20px auto; /* Center with margin */
     border: none;
     height: 2px;
     background: linear-gradient(to right, transparent, #e9f7f6, transparent);
-    margin-top: 60px;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce spacing between elements */
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .text-container {
+        text-align: center; /* Center-align text for better appearance */
+        border-right: none; /* Remove border for smaller screens */
+        border-bottom: 2px solid #d4a200; /* Optional: Add bottom border */
+        padding-bottom: 20px;
+    }
+
+    .portrait {
+        width: 120px; /* Reduce image size for smaller screens */
+        height: 120px; /* Keep circular shape */
+    }
+
+    .lets-connect {
+        font-size: 14px; /* Smaller font size for button */
+        padding: 8px 15px; /* Reduce button padding */
+    }
+
+    .hr-home {
+        width: 70%; /* Narrower line for smaller screens */
+    }
+}

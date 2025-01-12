@@ -6,7 +6,7 @@ function Projects() {
             id: 1,
             image: "",
             title: "TV Show Finder",
-            description: "A web app to search and save your favorite TV shows, built with React, Node.js, and PostgreSQL.",
+            description: "A full-stack web application that allows users to search for TV shows using a third-party API, view detailed show information, and save their favorite shows for future reference. The app features a responsive and user-friendly interface built with React, a robust backend powered by Node.js, and a PostgreSQL database for storing user data and favorite shows.",
             technologies: ["React", "Node.js", "PostgreSQL"],
             link: "https://github.com/your-github-username/tv-show-finder",
         },
@@ -14,7 +14,7 @@ function Projects() {
             id: 2,
             image: "",
             title: "Flashcard App",
-            description: "An interactive flashcard app for studying and self-testing, built with React and Express.",
+            description: "An interactive flashcard application designed to help users study and test their knowledge effectively. Users can create custom decks, add flashcards with questions and answers, and flip through them to practice. Built with React for dynamic UI interactions, Express for the backend, and styled with Bootstrap for a clean and modern look.",
             technologies: ["React", "Express", "Bootstrap"],
             link: "https://github.com/your-github-username/flashcard-app",
         },
@@ -22,15 +22,18 @@ function Projects() {
             id: 3,
             image: "",
             title: "Portfolio Website",
-            description: "A personal portfolio website to showcase my projects and skills, built with React and CSS.",
+            description: "A professional portfolio website to showcase my skills, projects, and experience in web development. This responsive site includes a visually appealing homepage, detailed project sections, and contact information. Built using React for dynamic content rendering, CSS for custom styling, and HTML for structuring content.",
             technologies: ["React", "CSS", "HTML"],
             link: "https://your-portfolio-link.com",
         },
-    ];
+    ];    
 
     return (
     <div>
-        <h1>projects</h1>
+
+        <hr />
+
+        <h1 className="component-title">projects</h1>
 
         <div className="projects-container">
             <div className="projects-list">
@@ -66,9 +69,10 @@ function Projects() {
                     ))
                 }
             </div>
-
-
         </div>
+
+        <hr />
+
     </div>
     );
 }
