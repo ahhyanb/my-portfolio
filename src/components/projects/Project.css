@@ -1,44 +1,47 @@
-/* Individual project card */
+/* Projects Container */
+.projects-container {
+    padding: 20px; /* Add padding for the container */
+}
+
+/* Individual Project Card */
 .project-card {
     display: flex; /* Use flexbox for layout */
     flex-direction: row; /* Arrange items in a row */
     align-items: center; /* Align items vertically in the center */
-    /* background-color: #0d0d0d; */
-    /* border: 10px solid #e9f7f6; */
     border-radius: 30px;
     overflow: hidden;
     width: 100%; /* Ensure cards take up the full width */
     max-width: 900px; /* Limit the max width of the card */
     margin: 20px auto; /* Center the card horizontally with auto margin */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Add a background color for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-
-
-/* Project image */
+/* Project Image */
 .project-card img {
-    width: 40%; /* Make the image take up 40% of the card width */
+    width: 40%; /* Image takes 40% of the card width */
     height: 100%; /* Ensure the image fills the height */
     object-fit: cover;
-    border-right: 5px solid #e4c553; /* Add a dividing line between the image and text */
+    border-right: 5px solid #e4c553; /* Dividing line between image and content */
 }
 
-/* Project content */
+/* Project Content */
 .project-content {
     text-align: left; /* Align text to the left */
     padding: 20px; /* Add padding around the text */
-    width: 60%; /* Make the content take up the remaining 60% of the card width */
+    width: 60%; /* Content takes the remaining 60% of the card width */
     box-sizing: border-box; /* Include padding in the width calculation */
 }
 
-/* Project title */
+/* Project Title */
 .project-title {
     font-size: 1.5rem;
     color: #0d0d0d;
-    margin-bottom: 10px; /* Add spacing below the title */
+    margin-bottom: 10px;
 }
 
-/* Project description */
+/* Project Description */
 .project-description {
     font-size: 1rem;
     color: #0d0d0d;
@@ -46,7 +49,7 @@
     line-height: 1.5;
 }
 
-/* Project technologies */
+/* Project Technologies */
 .project-technologies {
     display: flex;
     flex-wrap: wrap;
@@ -64,13 +67,13 @@
     text-transform: capitalize;
 }
 
-/* Project button */
+/* Project Button */
 .project-button {
     display: inline-block;
     background-color: #e9f7f6;
     color: #0d0d0d;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 0.875rem;
@@ -81,13 +84,50 @@
     background-color: #e4c553;
 }
 
+/* Component Title */
 .component-title {
-    font-size: 2.5rem; /* Adjust font size */
-    color: #0d0d0d; /* Title color */
-    text-align: center; /* Center the title */
-    margin: 0; /* Remove default margins */
-    width: 100%; /* Ensure title takes the full width */
-    max-width: 900px; /* Align with project card's max width */
-    padding: 100px 0; /* Add vertical padding for spacing */
+    font-size: 2.5rem;
+    color: #0d0d0d;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 0; /* Adjust vertical spacing */
 }
 
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .project-card {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .project-card img {
+        width: 100%; /* Image takes full width */
+        height: auto; /* Adjust height proportionally */
+        border-right: none; /* Remove dividing line */
+    }
+
+    .project-content {
+        width: 100%; /* Content takes full width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .project-title {
+        font-size: 1.3rem; /* Slightly smaller title */
+    }
+
+    .project-description {
+        font-size: 0.9rem; /* Adjust description font size */
+    }
+
+    .tech {
+        font-size: 0.8rem; /* Adjust font size for tags */
+        padding: 3px 8px; /* Adjust padding */
+    }
+
+    .project-button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 0.85rem; /* Adjust font size */
+    }
+}

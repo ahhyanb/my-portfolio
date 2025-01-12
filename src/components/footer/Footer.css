@@ -1,23 +1,24 @@
+/* Footer Container */
 .footer-container {
     display: flex; /* Use Flexbox */
     flex-direction: row; /* Arrange items in a row */
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Space out content */
-    color: #0d0d0d; /* Light text for contrast */
-    border-radius: 30px; /* Rounded corners to match project card */
+    color: #0d0d0d;
     overflow: hidden; /* Prevent content from spilling out */
     width: 100%; /* Full width */
     max-width: 900px; /* Limit the max width */
     margin: 20px auto; /* Center the footer horizontally */
-    padding: 50px 50px; /* Add padding for spacing */
+    padding: 20px 30px; /* Add padding for spacing */
+   
 }
 
-
+/* Footer Content */
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
-    gap: 15px; /* Add spacing between items */
+    gap: 10px; /* Add spacing between items */
     width: 60%; /* Take up 60% of the footer */
     box-sizing: border-box; /* Include padding in width */
 }
@@ -35,16 +36,17 @@
 }
 
 .footer-links a {
-    color: #0d0d0d; /* Highlight color */
+    color: #0d0d0d; /* Dark text for contrast */
     text-decoration: none; /* Remove underline */
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #efecef; /* Brighter hover color */
+    color: #e4c553; /* Gold hover color for links */
 }
 
+/* Social Media Section */
 .social-media {
     display: flex;
     justify-content: flex-end; /* Align icons to the right */
@@ -61,4 +63,39 @@
 
 .social-media a img:hover {
     transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align content */
+        text-align: center; /* Center-align text */
+        padding: 20px; /* Adjust padding */
+        gap: 20px; /* Add spacing between sections */
+    }
+
+    .footer-content {
+        align-items: center; /* Center-align content for small screens */
+        width: 100%; /* Full width */
+    }
+
+    .footer-content p {
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+
+    .footer-links {
+        justify-content: center; /* Center-align links */
+        gap: 15px; /* Add space between links */
+    }
+
+    .social-media {
+        justify-content: center; /* Center-align icons */
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .social-media a img {
+        width: 25px; /* Slightly smaller icon size */
+        height: 25px;
+    }
 }

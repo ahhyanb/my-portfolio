@@ -1,3 +1,4 @@
+/* Contact Container */
 .contact-container {
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -7,38 +8,38 @@
     color: #e9f7f6; /* Light text for contrast */
     padding: 50px 20px; /* Add padding around the container */
     width: 100%; /* Full width */
-   
     margin: 20px auto; /* Center the container horizontally */
 }
 
+/* Contact Title */
 .contact-container h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #e9f7f6; /* Ensure title matches container color */
-    padding: 50px 50px; /* Add spacing below the title */
-    text-align: left; /* Align the title to the left */
-    width: 900px;
-
+    padding: 0 20px; /* Adjust padding for smaller screens */
 }
 
+/* Contact Description */
 .contact-container p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #e9f7f6; /* Ensure contrast against the dark background */
     line-height: 1.5; /* Improve readability */
     max-width: 600px; /* Limit width for readability */
-    padding-bottom: 50px;
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
+/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column; /* Stack form elements */
     gap: 15px; /* Add space between form elements */
     width: 100%; /* Full width */
     max-width: 600px; /* Limit form width */
-    padding-bottom: 50px;
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
+/* Form Group */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -46,12 +47,14 @@
     width: 100%; /* Ensure the group spans full width */
 }
 
+/* Labels */
 label {
     font-size: 1rem;
     margin-bottom: 5px;
     color: #e9f7f6; /* Match label color with the container */
 }
 
+/* Input and Textarea */
 input, textarea {
     width: 100%; /* Full width */
     padding: 10px;
@@ -63,12 +66,14 @@ input, textarea {
     color: #0d0d0d; /* Dark text for input fields */
 }
 
+/* Focus States */
 input:focus, textarea:focus {
     border-color: #e4c553; /* Highlight border on focus */
     outline: none; /* Remove default outline */
     box-shadow: 0 0 4px #e4c553; /* Add a subtle glow effect */
 }
 
+/* Submit Button */
 .submit-button {
     padding: 12px 20px;
     font-size: 1rem;
@@ -80,7 +85,35 @@ input:focus, textarea:focus {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Submit Button Hover */
 .submit-button:hover {
     background-color: #e9f7f6; /* Slightly brighter hover color */
     transform: translateY(-2px); /* Lift the button on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .contact-container h1 {
+        font-size: 2rem; /* Adjust title font size */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .contact-container p {
+        font-size: 1rem; /* Adjust description font size */
+    }
+
+    .contact-form {
+        gap: 10px; /* Reduce gap between form elements */
+        padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+
+    input, textarea {
+        font-size: 0.9rem; /* Adjust font size for inputs and textarea */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .submit-button {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
 }
