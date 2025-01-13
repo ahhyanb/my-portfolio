@@ -2,6 +2,8 @@
 
 Welcome to my portfolio! This repository contains the source code for my personal portfolio website, showcasing my projects, skills, and contact information.
 
+To see the live website please go to www.ryanbartolome.com
+
 ## Table of Contents
 
 - [About](#about)
@@ -43,7 +45,7 @@ This project is built with:
 - **React**: For building the user interface.
 - **CSS**: For custom styling and responsiveness.
 - **EmailJS**: To enable form submissions.
-- **GitHub Pages**: For deployment.
+- **Render**: For deployment.
 
 ---
 
