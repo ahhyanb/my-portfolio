@@ -9,30 +9,35 @@ import Footer from './components/footer/Footer';
 function App() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (!element) {
+      console.warn(`No section found with id: ${id}`);
+      return;
     }
+    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <>
       <Header onNavigate={scrollToSection} />
 
-      <div id="home">
-        <Home />
-      </div>
-      <div id="bio">
-        <Bio />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
-      <div>
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+        <section id="bio">
+          <Bio />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+
+      <footer id="footer">
         <Footer />
-      </div>
+      </footer>
     </>
   );
 }
