@@ -24,7 +24,7 @@ function Home() {
             </div>
             
             <img
-                src="./portrait-transparent.png"
+                src="./portrait-transparent.webp"
                 alt="Ryan's Portrait"
                 className="portrait"
             />
