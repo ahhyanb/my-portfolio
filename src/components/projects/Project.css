@@ -1,37 +1,41 @@
 /* Projects Container */
 .projects-container {
-    padding: 20px; /* Add padding for the container */
+    padding: 20px;
 }
 
 /* Individual Project Card */
 .project-card {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Arrange items in a row */
-    align-items: center; /* Align items vertically in the center */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border-radius: 30px;
     overflow: hidden;
-    width: 100%; /* Ensure cards take up the full width */
-    max-width: 900px; /* Limit the max width of the card */
-    margin: 20px auto; /* Center the card horizontally with auto margin */
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Project Image */
-.project-card img {
-    width: 40%; /* Image takes 40% of the card width */
-    height: 100%; /* Ensure the image fills the height */
+.project-image {
+    width: 40%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-right: 3px solid #e4c553; /* Dividing line between image and content */
+    border-right: 3px solid #e4c553;
     padding-right: 20px;
 }
 
 /* Project Content */
 .project-content {
-    text-align: left; /* Align text to the left */
-    padding: 20px; /* Add padding around the text */
-    width: 60%; /* Content takes the remaining 60% of the card width */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    text-align: left;
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
 }
 
 /* Project Title */
@@ -92,42 +96,44 @@
     margin: 0;
     width: 100%;
     max-width: 900px;
-    padding: 40px 0; /* Adjust vertical spacing */
+    padding: 40px 0;
 }
 
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
     .project-card {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center-align text */
+        flex-direction: column;
+        text-align: center;
     }
 
-    .project-card img {
-        width: 100%; /* Image takes full width */
-        height: auto; /* Adjust height proportionally */
-        border-right: none; /* Remove dividing line */
+    .project-image {
+        width: 100%;
+        aspect-ratio: auto;
+        height: auto;
+        border-right: none;
+        padding-right: 0;
     }
 
     .project-content {
-        width: 100%; /* Content takes full width */
-        padding: 15px; /* Adjust padding */
+        width: 100%;
+        padding: 15px;
     }
 
     .project-title {
-        font-size: 1.3rem; /* Slightly smaller title */
+        font-size: 1.3rem;
     }
 
     .project-description {
-        font-size: 0.9rem; /* Adjust description font size */
+        font-size: 0.9rem;
     }
 
     .tech {
-        font-size: 0.8rem; /* Adjust font size for tags */
-        padding: 3px 8px; /* Adjust padding */
+        font-size: 0.8rem;
+        padding: 3px 8px;
     }
 
     .project-button {
-        padding: 10px 20px; /* Adjust button padding */
-        font-size: 0.85rem; /* Adjust font size */
+        padding: 10px 20px;
+        font-size: 0.85rem;
     }
 }
