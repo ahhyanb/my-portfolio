@@ -5,10 +5,7 @@ import "aos/dist/aos.css";
 
 function Projects() {
 	useEffect(() => {
-		AOS.init({
-			duration: 800,
-			once: true,
-		});
+		AOS.init({ duration: 800, once: true });
 	}, []);
 
 	const projectList = [
@@ -44,17 +41,12 @@ function Projects() {
 	return (
 		<div>
 			<hr />
-
 			<h1 className="component-title">projects</h1>
 
 			<div className="projects-container">
 				<div className="projects-list">
 					{projectList.map((project) => (
-						<div
-							className="project-card"
-							key={project.id}
-							data-aos="fade-up"
-						>
+						<div className="project-card" key={project.id} data-aos="fade-up">
 							<img
 								src={project.image}
 								alt={project.title}
@@ -63,16 +55,18 @@ function Projects() {
 								width="400"
 								height="225"
 							/>
-							<div className="project-technologies">
-								{project.technologies.map((tech, index) => (
-									<div className="tech" key={index}>
-										{tech}
-									</div>
-								))}
-							</div>
 							<div className="project-content">
 								<h2 className="project-title">{project.title}</h2>
 								<p className="project-description">{project.description}</p>
+
+								<div className="project-technologies">
+									{project.technologies.map((tech, index) => (
+										<div className="tech" key={index}>
+											{tech}
+										</div>
+									))}
+								</div>
+
 								<a
 									href={project.link}
 									className="project-button"

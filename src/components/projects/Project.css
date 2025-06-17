@@ -1,139 +1,132 @@
-/* Projects Container */
 .projects-container {
-    padding: 20px;
+	padding: 20px;
 }
 
-/* Individual Project Card */
 .project-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 30px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 900px;
-    margin: 20px auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 30px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 900px;
+	margin: 20px auto;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer; /* Optional: shows pointer to hint interactivity */
 }
 
 .project-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transform: scale(1.02);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Image */
 .project-image {
-    width: 40%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-right: 3px solid #e4c553;
-    padding-right: 20px;
+	width: 40%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	border-right: 3px solid #e4c553;
+	padding-right: 20px;
 }
 
-/* Project Content */
 .project-content {
-    text-align: left;
-    padding: 20px;
-    width: 60%;
-    box-sizing: border-box;
+	text-align: center;
+	padding: 20px;
+	width: 60%;
+	box-sizing: border-box;
 }
 
-/* Project Title */
 .project-title {
-    font-size: 1.5rem;
-    color: #0d0d0d;
-    margin-bottom: 10px;
+	font-size: 1.5rem;
+	color: #0d0d0d;
+	margin-bottom: 10px;
 }
 
-/* Project Description */
 .project-description {
-    font-size: 1rem;
-    color: #0d0d0d;
-    margin-bottom: 15px;
-    line-height: 1.5;
+	font-size: 1rem;
+	color: #0d0d0d;
+	margin-bottom: 15px;
+	line-height: 1.5;
 }
 
-/* Project Technologies */
 .project-technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 15px;
-    padding-left: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 15px;
 }
 
 .tech {
-    background-color: #e4c553;
-    color: #0d0d0d;
-    font-size: 0.875rem;
-    padding: 5px 10px;
-    border-radius: 50px;
-    text-transform: capitalize;
+	background-color: #e4c553;
+	color: #0d0d0d;
+	font-size: 0.875rem;
+	padding: 5px 10px;
+	border-radius: 50px;
+	text-transform: capitalize;
 }
 
-/* Project Button */
 .project-button {
-    display: inline-block;
-    background-color: #e9f7f6;
-    color: #0d0d0d;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.875rem;
-    transition: background-color 0.3s ease;
+	display: block;
+	margin: 20px auto 0 auto;
+	background-color: #e9f7f6;
+	color: #0d0d0d;
+	text-decoration: none;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 0.875rem;
+	transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .project-button:hover {
-    background-color: #e4c553;
+	background-color: #e4c553;
+	transform: scale(1.05);
 }
 
-/* Component Title */
 .component-title {
-    font-size: 2.5rem;
-    color: #0d0d0d;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    max-width: 900px;
-    padding: 40px 0;
+	font-size: 2.5rem;
+	color: #0d0d0d;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	max-width: 900px;
+	padding: 40px 0;
 }
 
-/* Media Query for Small Screens */
 @media (max-width: 600px) {
-    .project-card {
-        flex-direction: column;
-        text-align: center;
-    }
+	.project-card {
+		flex-direction: column;
+		text-align: center;
+	}
 
-    .project-image {
-        width: 100%;
-        aspect-ratio: auto;
-        height: auto;
-        border-right: none;
-        padding-right: 0;
-    }
+	.project-image {
+		width: 100%;
+		aspect-ratio: auto;
+		height: auto;
+		border-right: none;
+		padding-right: 0;
+	}
 
-    .project-content {
-        width: 100%;
-        padding: 15px;
-    }
+	.project-content {
+		width: 100%;
+		padding: 15px;
+	}
 
-    .project-title {
-        font-size: 1.3rem;
-    }
+	.project-title {
+		font-size: 1.3rem;
+	}
 
-    .project-description {
-        font-size: 0.9rem;
-    }
+	.project-description {
+		font-size: 0.9rem;
+	}
 
-    .tech {
-        font-size: 0.8rem;
-        padding: 3px 8px;
-    }
+	.tech {
+		font-size: 0.8rem;
+		padding: 3px 8px;
+	}
 
-    .project-button {
-        padding: 10px 20px;
-        font-size: 0.85rem;
-    }
+	.project-button {
+		padding: 10px 20px;
+		font-size: 0.85rem;
+	}
 }
