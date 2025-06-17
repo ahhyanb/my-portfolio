@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Header.css";
 
 function Header({ onNavigate }) {
@@ -9,6 +11,11 @@ function Header({ onNavigate }) {
 	};
 
 	useEffect(() => {
+		AOS.init({
+			duration: 800,
+			once: true,
+		});
+
 		const handleResize = () => {
 			if (window.innerWidth > 768) {
 				setIsMobileMenuOpen(false);
@@ -20,7 +27,7 @@ function Header({ onNavigate }) {
 
 	return (
 		<>
-			<header className="header">
+			<header className="header" data-aos="fade-down">
 				<div className="logo-container">
 					<span className="logo">rb</span>
 					<span className="divider"></span>
@@ -38,10 +45,21 @@ function Header({ onNavigate }) {
 				</div>
 
 				<nav className={`nav-container ${isMobileMenuOpen ? "active" : ""}`}>
-					<button onClick={() => onNavigate("home")} className="nav-link">home</button>
-					<button onClick={() => onNavigate("bio")} className="nav-link">bio</button>
-					<button onClick={() => onNavigate("projects")} className="nav-link">projects</button>
-					<button onClick={() => onNavigate("contact")} className="nav-link contact-link">contact me</button>
+					<button onClick={() => onNavigate("home")} className="nav-link">
+						home
+					</button>
+					<button onClick={() => onNavigate("bio")} className="nav-link">
+						bio
+					</button>
+					<button onClick={() => onNavigate("projects")} className="nav-link">
+						projects
+					</button>
+					<button
+						onClick={() => onNavigate("contact")}
+						className="nav-link contact-link"
+					>
+						contact me
+					</button>
 				</nav>
 			</header>
 
